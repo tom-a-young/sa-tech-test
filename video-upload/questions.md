@@ -1,1 +1,1 @@
-What volume of videos do we expect to store?
+What volume / number of videos do we expect to store?

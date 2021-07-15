@@ -1,6 +1,6 @@
 # Video Upload Solution
 
-This document details the proposed solution for uploading sports videos with metadata
+This document details the proposed solution for uploading sports videos with metadata. N.B. Subsequent processing is detailed in the video-processing README.md
 
 ## Overview
 
@@ -94,7 +94,7 @@ Assuming a static website size of >1GB and a request volume of ~10000/mo, the co
 
 #### Overview
 
-This S3 bucket will store the uploaded video files, and will be used to stream videos via Cloudfront to our Legends App (discussed in the legends-app README.md).
+This S3 bucket will store the uploaded video files before conversion.
 * Only allow getting/putting objects using signed urls
 
 #### Operation
@@ -109,7 +109,7 @@ This S3 bucket will store the uploaded video files, and will be used to stream v
 
 #### Costs
 
-Assuming 5TB of video (accounting for ~1000 90 min HD videos at ~5GB each), cost would be $122.89 for storage. Streaming costs will be discussed in the legends-app README.md)
+Assuming 5TB of video (accounting for ~1000 90 min HD videos at ~5GB each), cost would be $122.89 for storage. Streaming costs will be discussed in the legends-app README.md). In future we could consider moving original video files into Glacier after conversion is complete.
 
 ### API Gateway
 

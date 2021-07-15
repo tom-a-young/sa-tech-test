@@ -1,0 +1,1 @@
+Will we use subscription groups or the like going forwards?
