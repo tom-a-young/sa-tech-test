@@ -4,7 +4,7 @@ This document details the proposed method of converting video to streamable form
 
 ## Overview
 
-This solution uses Amazon MediaConvert to take new videos from the Video Bucket, convert them and store the streamable formats along with manifests in the Stream bucket. It will then notify users of new videos using an SNS topic connected to SES.
+This solution uses Amazon MediaConvert to take new videos from the Video Bucket, convert them and store the streamable formats along with manifests in the Stream bucket.
 
 
 ## Diagram 
